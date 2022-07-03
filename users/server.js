@@ -14,6 +14,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("Hi there!");
+});
+
 app.listen(PORT, () => {
   console.log(`App listening on PORT: ${PORT}`);
 });
